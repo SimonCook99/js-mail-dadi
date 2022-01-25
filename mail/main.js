@@ -11,9 +11,11 @@ let mailAutorizzate = [
 for(let i = 0; i < mailAutorizzate.length; i++){
 
     if(mailAutorizzate.includes(mailUtente)){
-        document.getElementById("autorizzato").innerHTML = "utente autorizzato";
+        alert("Sei autorizzato ad accedere");
+        break;
     }else{
-        document.getElementById("autorizzato").innerHTML = "utente NON autorizzato";
+        alert("Non sei autorizzato");
+        break;
     }
 
 }
